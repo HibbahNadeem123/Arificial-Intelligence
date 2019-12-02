@@ -94,7 +94,7 @@ movie=['Shahzar','Ammar','Ahmed Ammar','Gul',
 		  'Aqsa Mehreen','Duha','Aimen','Noman','Asad','Ahsan Ishtiaq']
 
 #hobbies
-dance=['Ali']
+dance=['M Ali Hassan']
 martialart=['Aqsa Usman']
 games=['Ahmed Ammar','Gul','Anas','Mohsin','Hibbah',
 	   'Taha','Ahsan Mustafa','Hassam','Uzair Mehmood','Rabiya',
