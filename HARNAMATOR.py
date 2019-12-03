@@ -101,3 +101,31 @@ games=['Ahmed Ammar','Gul','Anas','Mohsin','Hibbah',
 	    'Noman','Ahsan Ishtiaq']
 writing=['Ammar']
 cooking=['Wajeha','Hibbah','Aqsa Mehreen','Duha']
+
+#favplacetolive
+uk=['Bisma', 'Ahsan Mustafa']
+northernareas=['Ahmed Ammar', 'Haseeb', 'Aqsa Usman']
+moscow=['Noman']
+islamabad=['Sajid', 'Wajeha', 'Ali Hassan Ghori', 'Mohsin', 'M Uzair','Aqsa Mehreen','Aimen']
+Karachi=['Shahzar','Ammar','Gul', 'Wajeha','M Ali Hassan', 'Hassam', 'Uzair Mehmood', 'Rabiya', 'Duha','Nameera']
+thailand=['Asad']
+turkey=['Rukhma']
+australia=['Hibbah']
+america=['Bushra']
+bahriatown=['Taha']
+makka=['Hammad']
+europe=['Anas']
+
+#favfood
+curry=['Ahsan Mustafa']
+pulao=['Hibbah']
+pasta=['Wajeha', 'Bisma', 'Bushra', 'Aimen']
+biryani=['Shahzar','Sajid','Farwa','Ammar', 'Ahmed Ammar', 'Gul','Anas','Rukhma', 'Haseeb','Taha', 'Aqsa Mehreen','Hassam','Uzair Mehmood','Rabiya', 'Aqsa Usman','Duha','Aimen','Asad', 'Hammad','Ahsan Ishtiaq']
+saag=['Mohsin']
+
+late=['Farwa','Ammar','Ahmed Ammar','Gul', 'Wajeha','Ali Hassan Ghori','Hibbah','M Uzair','Haseeb','Taha','Bushra','Bisma','Aqsa Usman','Ahsan Mustafa','Hassam', 'Rabiya','Asad']
+
+#biggestfear
+darkness=['Ammar']
+animalorinsects=['Anas','Wajeha','Rukhma','Bushra','Rabiya','Aqsa Mehreen']
+height=['Hibbah','Bisma','Duha']
