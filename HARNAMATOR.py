@@ -129,3 +129,80 @@ late=['Farwa','Ammar','Ahmed Ammar','Gul', 'Wajeha','Ali Hassan Ghori','Hibbah',
 darkness=['Ammar']
 animalorinsects=['Anas','Wajeha','Rukhma','Bushra','Rabiya','Aqsa Mehreen']
 height=['Hibbah','Bisma','Duha']
+
+#searching
+def askQues(count):
+    print(questions[count])
+
+i=0
+ans=[]
+index=0
+
+askQues(0)
+rep=input()
+if (rep=="no"):
+    for std in students:
+        if (std not in male):
+            ans.append(std)  
+    askQues(1)
+    rep=input()
+    if (rep=="yes"):
+        for i in range(0,len(ans)):
+            if (ans[index] in lessOrEqualtwenty):
+                ans.remove(ans[index])
+            else:
+                index=index+1  
+        index=0
+        askQues(2)
+        rep=input()
+        if (rep=="yes"):
+            for i in range(0,len(ans)):
+                if (ans[index] not in programming):
+                    ans.remove(ans[index])
+                else:
+                    index=index+1 
+            index=0
+            askQues(3)
+            rep=input()
+            if (rep=="yes"):
+                for i in range(0,len(ans)):
+                    if (ans[index] not in coffee):
+                        ans.remove(ans[index])
+                    else:
+                        index=index+1
+                index=0
+                askQues(19)
+                rep=input()
+                if (rep=="yes"):
+                    for i in range(0,len(ans)):
+                        if (ans[index] not in cooking):
+                            ans.remove(ans[index])
+                        else:
+                            index=index+1
+                    index=0
+                    #hibbah found
+            else:
+                for i in range(0,len(ans)):
+                    if (ans[index] in coffee):
+                        ans.remove(ans[index])
+                    else:
+                        index=index+1 
+                        #rabia found
+                index=0
+        else:
+            for i in range(0,len(ans)):
+                if (ans[index] in programming):
+                    ans.remove(ans[index])
+                else:
+                    index=index+1 
+            index=0
+    else:
+        for i in range(0,len(ans)):
+            if (ans[index] not in lessOrEqualtwenty):
+                ans.remove(ans[index])
+            else:
+                index=index+1 
+        index=0
+
+
+print (ans)
