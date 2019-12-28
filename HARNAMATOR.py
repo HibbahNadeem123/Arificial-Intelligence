@@ -1,9 +1,13 @@
-#Questions
-questions=["Is your character a male?", "Is your character older than 20?",
-           "Does your character like programming?","Does your character like coffee?",
-		   "Does your character like tea?","Does your character have colored eyes?",
-		   "Is your character a Punjabi?","Is your character a Sindhi?",
-		   "Is your character a Pshto?","Does your character know Turkish language?",
+questions=["Is your character a male?",
+           "Is your character older than 20?",
+           "Does your character like programming?",
+           "Does your character like coffee?",
+		   "Does your character like tea?",
+           "Does your character have colored eyes?",
+		   "Does your character speak Punjabi?",
+           "Does your character speak Sindhi?",
+		   "Does your character speak Pshto?",
+           "Does your character know Turkish language?",
 		   "Does your character like Continental food?",
 		   "Does your character like Asian food?",
 		   "Is your character's favorite cartoon Tom?",
@@ -11,10 +15,11 @@ questions=["Is your character a male?", "Is your character older than 20?",
 		   "Is your character's favorite cartoon Popeye?",
 		   "Does your character like to read books?",
 		   "Does your character like to watch movies?",
-		   "Is your character's hobby dancing?","Is your character's hobby gaming?",
+		   "Is your character's hobby dancing?",
+           "Is your character's hobby gaming?",
 		   "Is your character's hobby cooking and baking?",
 		   "Is your character's hobby martial art?",
-		   "Is your character's hobby wrtting?",
+		   "Is your character's hobby writting?",
 		   "Does your character prefer to live in the UK?",
 		   "Does your character prefer to live in Moscow?",
 		   "Does your character prefer to live in Nothern Areas of Pakistan?",
@@ -32,8 +37,10 @@ questions=["Is your character a male?", "Is your character older than 20?",
 		   "Is your character's favorite food Pasta?",
 		   "Is your character's favorite food Pulao?",
 		   "Is your character's favorite food Curry?",
-		   "Does your character often comee late?","Does your character fear of animal?",
-		   "Does your character fear of height?","Does your character fear of darkness?"
+		   "Does your character often comee late?",
+           "Does your character fear of animal?",
+		   "Does your character fear of height?",
+           "Does your character fear of darkness?"
 		   ]
 
 students=['Shahzar','Sajid','Farwa','Ammar','Ahmed Ammar','Gul',
@@ -140,13 +147,13 @@ index=0
 
 askQues(0)
 rep=input()
-if (rep=="no"):
+if (rep=="no"): #if female
     for std in students:
         if (std not in male):
             ans.append(std)  
     askQues(1)
     rep=input()
-    if (rep=="yes"):
+    if (rep=="yes"):#if older than 20
         for i in range(0,len(ans)):
             if (ans[index] in lessOrEqualtwenty):
                 ans.remove(ans[index])
@@ -155,7 +162,7 @@ if (rep=="no"):
         index=0
         askQues(2)
         rep=input()
-        if (rep=="yes"):
+        if (rep=="yes"): #if likes programing
             for i in range(0,len(ans)):
                 if (ans[index] not in programming):
                     ans.remove(ans[index])
@@ -164,7 +171,7 @@ if (rep=="no"):
             index=0
             askQues(3)
             rep=input()
-            if (rep=="yes"):
+            if (rep=="yes"):# if std likes coffee
                 for i in range(0,len(ans)):
                     if (ans[index] not in coffee):
                         ans.remove(ans[index])
@@ -173,7 +180,7 @@ if (rep=="no"):
                 index=0
                 askQues(19)
                 rep=input()
-                if (rep=="yes"):
+                if (rep=="yes"):#if likes cooking
                     for i in range(0,len(ans)):
                         if (ans[index] not in cooking):
                             ans.remove(ans[index])
@@ -181,6 +188,30 @@ if (rep=="no"):
                             index=index+1
                     index=0
                     #hibbah found
+                else:
+                    for i in range(0,len(ans)):
+                        if (ans[index] in cooking):
+                            ans.remove(ans[index])
+                        else:
+                            index=index+1 
+                    index=0
+                    askQues(41)
+                    rep=input()
+                    if (rep=="yes"):#if fears from height
+                        for i in range(0,len(ans)):
+                            if (ans[index] not in height):
+                                ans.remove(ans[index])
+                            else:
+                                index=index+1
+                                #bisma found
+                        index=0
+                    else:#if do not fear from height
+                        for i in range(0,len(ans)):
+                            if (ans[index] in height):
+                                ans.remove(ans[index])
+                            else:
+                                index=index+1 
+                            #Farwa found
             else:
                 for i in range(0,len(ans)):
                     if (ans[index] in coffee):
@@ -189,20 +220,125 @@ if (rep=="no"):
                         index=index+1 
                         #rabia found
                 index=0
-        else:
+                
+        else:#if do not likes programming
             for i in range(0,len(ans)):
                 if (ans[index] in programming):
                     ans.remove(ans[index])
                 else:
                     index=index+1 
             index=0
-    else:
+            askQues(19)
+            rep=input()
+            if (rep=="yes"):#if likes cooking and baking
+                for i in range(0,len(ans)):
+                    if (ans[index] not in cooking):
+                        ans.remove(ans[index])
+                    else:
+                        index=index+1
+                index=0
+                #[aqsa and duha]
+                askQues(41)
+                rep=input()
+                if (rep=="yes"):#if fears from height
+                    for i in range(0,len(ans)):
+                        if (ans[index] not in height):
+                            ans.remove(ans[index])
+                        else:
+                            index=index+1
+                            #duha found
+                    index=0
+                else:#if do not fear from height
+                    for i in range(0,len(ans)):
+                        if (ans[index] in height):
+                            ans.remove(ans[index])
+                        else:
+                            index=index+1 
+                        #aqsa found
+            else:# if not in cooking and baking
+                for i in range(0,len(ans)):
+                    if (ans[index] in cooking):
+                        ans.remove(ans[index])
+                    else:
+                        index=index+1 
+                index=0
+                #[aqsa usman and aimen]
+                askQues(20)
+                rep=input()
+                if (rep=="yes"):#martial art
+                    for i in range(0,len(ans)):
+                        if (ans[index] not in martialart):
+                            ans.remove(ans[index])
+                        else:
+                            index=index+1
+                            #aqsa usman found
+                    index=0
+                else:#if not in martial art
+                    for i in range(0,len(ans)):
+                        if (ans[index] in martialart):
+                            ans.remove(ans[index])
+                        else:
+                            index=index+1 
+                        # found aimen
+    else:# if not older than 20
         for i in range(0,len(ans)):
             if (ans[index] not in lessOrEqualtwenty):
                 ans.remove(ans[index])
             else:
                 index=index+1 
         index=0
-
-
+        askQues(3)
+        rep=input()
+        if (rep=="yes"):# if std likes coffee
+            for i in range(0,len(ans)):
+                if (ans[index] not in coffee):
+                    ans.remove(ans[index])
+                else:
+                    index=index+1
+                    #[wajeha bushra]
+            index=0
+            askQues(6)
+            rep=input()
+            if (rep=="yes"):#if speaks punjabi
+                for i in range(0,len(ans)):
+                    if (ans[index] not in punjabi):
+                        ans.remove(ans[index])
+                    else:
+                        index=index+1
+                        #wajeha found
+                index=0
+            else:#if do not speaks punjabi
+                for i in range(0,len(ans)):
+                    if (ans[index] in punjabi):
+                        ans.remove(ans[index])
+                    else:
+                        index=index+1 
+                    #bushra found
+        else:
+            for i in range(0,len(ans)):
+                if (ans[index] in coffee):
+                    ans.remove(ans[index])
+                else:
+                    index=index+1 
+                        #[rukhma nameera]
+            index=0
+            askQues(6)
+            rep=input()
+            if (rep=="yes"):#if speaks punjabi
+                for i in range(0,len(ans)):
+                    if (ans[index] not in punjabi):
+                        ans.remove(ans[index])
+                    else:
+                        index=index+1
+                        #rukhma found
+                index=0
+            else:#if do not speaks punjabi
+                for i in range(0,len(ans)):
+                    if (ans[index] in punjabi):
+                        ans.remove(ans[index])
+                    else:
+                        index=index+1 
+                        #nameera found
+                index=0
+                            
 print (ans)
