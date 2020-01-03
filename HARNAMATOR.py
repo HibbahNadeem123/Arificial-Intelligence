@@ -6,7 +6,7 @@ questions=["Is your character a male?",
            "Does your character have colored eyes?",
 		   "Does your character speak Punjabi?",
            "Does your character speak Sindhi?",
-		   "Does your character speak Pshto?",
+		   "Does your character speak Pashto?",
            "Does your character know Turkish language?",
 		   "Does your character like Continental food?",
 		   "Does your character like Asian food?",
@@ -37,7 +37,7 @@ questions=["Is your character a male?",
 		   "Is your character's favorite food Pasta?",
 		   "Is your character's favorite food Pulao?",
 		   "Is your character's favorite food Curry?",
-		   "Does your character often comee late?",
+		   "Does your character often come late?",
            "Does your character fear of animal?",
 		   "Does your character fear of height?",
            "Does your character fear of darkness?"
@@ -340,5 +340,118 @@ if (rep=="no"): #if female
                         index=index+1 
                         #nameera found
                 index=0
-                            
+if(rep=="yes"): #male
+    for std in students:
+        ans.append(std)
+    askQues(1) #older than 20
+    rep=input()
+    if(rep=="yes"):
+        for i in range(0,len(ans)):
+            if(ans[index] in lessOrEqualtwenty):
+                ans.remove(ans[index])
+            else:
+                index=index+1
+        index=0
+
+        askQues(5)
+        rep=input()
+        if(rep=="yes"):#colored eyes
+            for i in range(0,len(ans)):
+                if(ans[index] not in coloredeyes):
+                    ans.remove(ans[index])
+                else:
+                    index=index+1
+            index=0
+            #ammar mohsin ahsanm
+
+            askQues(18)
+            rep=input()
+            if(rep=="yes"):#play games
+                for i in range(0,len(ans)):
+                    if(ans[index] not in games):
+                        ans.remove(ans[index])
+                    else:
+                        index=index+1
+                index=0
+                #mohsin, ahsanm
+
+                askQues(38)
+                rep=input()
+                if(rep=="yes"):
+                    for i in range(0,len(ans)):
+                        if(ans[index] not in curry):
+                            ans.remove(ans[index])
+                        else:
+                            index=index+1
+                    index=0
+                    #ahsanM found
+                else:
+                    for i in range(0,len(ans)):
+                        if(ans[index] in curry):
+                            ans.remove(ans[index])
+                        else:
+                            index=index+1
+                    index=0
+                    #mohsin found
+            else:
+                for i in range(0,len(ans)):
+                    if(ans[index] in games):
+                        ans.remove(ans[index])
+                    else:
+                        index=index+1
+                index=0
+                #ammar found
+
+        else:#not colored eyes
+            for i in range(0,len(0,ans)):
+                if(ans[index] in coloredeyes):
+                    ans.remove(ans[index])
+                else:
+                    index=index+1
+            index=0
+            #taha, sajid, hammad
+
+            askQues(32)
+        rep=input()
+        if (rep=="yes"):
+            for i in range(0,len(ans)):
+                if(ans[index] not in makka):
+                    ans.remove(ans[index])
+                else:
+                    index=index+1
+            #hammad found
+        else:
+            for i in range(0,len(ans)):
+                if(ans[index] in makka):
+                    ans.remove(ans[index])
+                else:
+                    index=index+1
+            index=0
+            #[sajid,taha]
+
+            askQues(31)
+            rep=input()
+            if(rep=="yes"):
+                for i in range(0,len(ans)):
+                    if(ans[index] not in bahriatown):
+                        ans.remove(ans[index])
+                    else:
+                        index=index+1
+                index=0
+                #taha found
+            else:
+                for i in range(0,len(ans)):
+                    if(ans[index] in bahriatown):
+                        ans.remove(ans[index])
+                    else:
+                        index=index+1
+                index=0
+                #sajid found
+
+
+    
+
+
+
+
 print (ans)
