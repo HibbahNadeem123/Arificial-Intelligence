@@ -455,6 +455,226 @@ else: #younger than 20
             else:
                 index=index+1
         index=0
+
+        askQues(2)
+        rep=input()
+        if(rep=="yes"):#likes programming
+            for i in range(0,len(ans)):
+                if(ans[index] not in programming):
+                    ans.remove(ans[index])
+                else:
+                    index=index+1
+            index=0
+
+            askQues(18)
+            rep=input()
+            if(rep=="yes"):#gaming
+                for i in range(0,len(ans)):
+                    if(ans[index] not in games):
+                        ans.remove(ans[index])
+                    else:
+                        index=index+1
+                index=0
+
+                askQues(3)
+                rep=input()
+                if(rep=="yes"):#coffee
+                    for i in range(0,len(ans)):
+                        if(ans[index] not in coffee):
+                            ans.remove(ans[index])
+                        else:
+                            index=index+1
+                #anas found
+                else: #not likes coffee
+                    for i in range(0,len(ans)):
+                        if(ans[index] in coffee):
+                            ans.remove(ans[index])
+                        else:
+                            index=index+1
+                    index=0
+                    #Ahmedammar Gul Hassam UzairM AhsanI
+
+                    askQues(24)
+                    rep=input()
+                    if(rep=="yes"):
+                        for i in range(0,len(ans)):
+                            if(ans[index] not in northernareas):
+                                ans.remove(ans[index])
+                            else:
+                                index=index+1
+                        index=0
+                        #ahmedammar found
+                    else:
+                        for i in range(0,len(ans)):
+                            if(ans[index] in northernareas):
+                                ans.remove(ans[index])
+                            else:
+                                index=index+1
+                        index=0
+                        #Gul hassam uzairM AhSanI
+                        askQues(10)
+                        rep=input()
+                        if(rep=="yes"):#like continental food
+                            for i in range(0,len(ans)):
+                                if(ans[index] not in continental):
+                                    ans.remove(ans[index])
+                                else:
+                                    index=index+1
+                            index=0
+                            #Hassam found
+                        else:
+                            for i in range(0,len(ans)):
+                                if(ans[index] in continental):
+                                    ans.remove(ans[index])
+                                else:
+                                    index=index+1
+                            index=0
+                        #GUL uzairM ahsanI
+
+                            askQues(15)
+                            rep=input()
+                            if(rep=="yes"):#books 
+                                for i in range(0,len(ans)):
+                                    if(ans[index] not in book):
+                                        ans.remove(ans[index])
+                                    else:
+                                        index=index+1
+                                        #uzair mehmood found                                  
+                            else:#not likes book reading
+                                for i in range(0,len(ans)):
+                                    if(ans[index] in book):
+                                        ans.remove(ans[index])
+                                    else:
+                                        index=index+1
+                                index=0
+                                #ahsanI gul 
+                                askQues(25)
+                                rep=input()
+                                if(rep=="yes"):#karachi 
+                                    for i in range(0,len(ans)):
+                                        if(ans[index] not in Karachi):
+                                            ans.remove(ans[index])
+                                        else:
+                                            index=index+1
+                                        #gul found                                  
+                                else:
+                                    for i in range(0,len(ans)):
+                                        if(ans[index] in Karachi):
+                                            ans.remove(ans[index])
+                                        else:
+                                            index=index+1
+                                        #ahsan I
+#########
+            else:
+                for i in range(0,len(ans)):
+                    if(ans[index] in games):
+                        ans.remove(ans[index])
+                    else:
+                        index=index+1
+                index=0
+                #shahzar muzair mali asad
+
+                askQues(25)
+                rep=input()
+                if(rep=="yes"):#PREFERS TO LIVE IN KARACHI
+                    for i in range(0,len(ans)):
+                        if(ans[index] not in Karachi):
+                            ans.remove(ans[index])
+                        else:
+                            index=index+1
+                    index=0
+                    #shahzar mali
+
+                    askQues(9)
+                    rep=input()
+                    if (rep=="yes"):
+                        for i in range(0,len(ans)):#can speak turkish
+                            if(ans[index] not in turkish):
+                                ans.remove(ans[index])
+                            else:
+                                index=index+1
+                        index=0
+                        #shahzar found
+                    else:#can not speak turkish
+                        for i in range(0,len(ans)):
+                            if(ans[index] in turkish):
+                                ans.remove(ans[index])
+                            else:
+                                index=index+1
+                        index=0
+                        #m ali hassan found
+                else:#not prefers to live in karachi
+                    for i in range(0,len(ans)):
+                        if(ans[index] in Karachi):
+                            ans.remove(ans[index])
+                        else:
+                            index=index+1
+                    index=0
+                    #muzair asad
+
+                    askQues(26)
+                    rep=input()
+                    if(rep=="yes"):#prefered place to live is islamabad
+                        for i in range(0,len(ans)):
+                            if(ans[index] not in islamabad):
+                                ans.remove(ans[index])
+                            else:
+                                index=index+1
+                        index=0
+                        #muzair found
+                    else:#prefered place to live is islamabad
+                        for i in range(0,len(ans)):
+                            if(ans[index] in islamabad):
+                                ans.remove(ans[index])
+                            else:
+                                index=index+1
+                        index=0
+                        #asad found
+        else:#do not like prog
+            for i in range(0,len(ans)):
+                if(ans[index] in programming):
+                    ans.remove(ans[index])
+                else:
+                    index=index+1
+            index=0
+            #ghori haseeb noman
+            askQues(8)
+            rep=input()
+            if(rep=="yes"):
+                for i in range(0,len(ans)):
+                    if(ans[index] not in pashto):
+                        ans.remove(ans[index])
+                    else:
+                        index=index+1
+                index=0
+                #haseeb found
+            else:
+                for i in range(0,len(ans)):
+                    if(ans[index] in pashto):
+                        ans.remove(ans[index])
+                    else:
+                        index=index+1
+                index=0
+                #ghori noman
+                askQues(4)
+                rep=input()
+                if(rep=="yes"):
+                    for i in range(0,len(ans)):
+                        if(ans[index] not in tea):
+                            ans.remove(ans[index])
+                        else:
+                            index=index+1
+                    index=0
+                    #noman found
+                else:
+                    for i in range(0,len(ans)):
+                        if(ans[index] in tea):
+                            ans.remove(ans[index])
+                        else:
+                            index=index+1
+                    index=0
+                    #ghori found
+
     
     
 
