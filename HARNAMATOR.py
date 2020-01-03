@@ -448,7 +448,14 @@ if(rep=="yes"): #male
                 index=0
                 #sajid found
 
-
+else: #younger than 20
+        for i in range(0,len(ans)):
+            if(ans[index] not in lessOrEqualtwenty):
+                ans.remove(ans[index])
+            else:
+                index=index+1
+        index=0
+    
     
 
 
